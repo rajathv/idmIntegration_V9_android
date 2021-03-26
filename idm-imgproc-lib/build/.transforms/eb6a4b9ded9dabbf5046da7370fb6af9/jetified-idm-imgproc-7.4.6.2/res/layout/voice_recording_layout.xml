@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F4F4F4">
+
+        <ImageButton
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_cancel_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/recording"
+            android:textColor="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingBottom="40dp">
+
+            <TextView
+                android:id="@+id/minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="50dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/recording_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/voice_recording_btn_background"
+            android:src="@drawable/start_recording" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/delete_recording_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/voice_recording_btn_background"
+                android:padding="5dp"
+                android:src="@drawable/delete_recording" />
+
+            <ImageView
+                android:id="@+id/done_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/voice_recording_btn_background"
+                android:padding="5dp"
+                android:src="@drawable/accept_recording" />
+
+            <ImageView
+                android:id="@+id/re_record_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/voice_recording_btn_background"
+                android:padding="5dp"
+                android:src="@drawable/rerecord" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/powered_by_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/powered_by_idmission"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="1dp"
+            android:paddingRight="3dp"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

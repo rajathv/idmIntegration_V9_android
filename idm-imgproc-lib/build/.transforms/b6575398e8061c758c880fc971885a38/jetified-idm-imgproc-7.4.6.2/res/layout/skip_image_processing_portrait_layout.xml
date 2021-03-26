@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <io.fotoapparat.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/camera_preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.idmission.acquisitionapp.views.OverlayView
+        android:id="@+id/overlay_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <ImageButton
+                android:id="@+id/exit_img_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/back_cancel_arrow"
+                android:clickable="true" />
+
+            <!-- Header text and image -->
+            <TextView
+                android:id="@+id/header_textview_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/header_textview_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/page_title_image_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp" />
+
+            <!-- Center text and image -->
+
+
+            <ImageButton
+                android:id="@+id/resize_outline_window_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:clickable="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/center_textview_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="8"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/center_textview_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="8"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/page_title_image_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <!-- Botton text and image -->
+        <TextView
+            android:id="@+id/bottom_textview_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/capture_btn"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="8"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bottom_textview_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/capture_btn"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="8"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/page_title_image_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/capture_btn"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/bottom_portrait_textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/capture_btn"
+            android:layout_centerHorizontal="true"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="8"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/capture_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/cam_button"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/powered_by_label_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/powered_by_idmission"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

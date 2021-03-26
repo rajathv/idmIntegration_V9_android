@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idmission.passivefacedetection.PassiveFaceDetectionActivity">
+
+    <io.fotoapparat.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </io.fotoapparat.view.CameraView>
+
+    <RelativeLayout
+        android:id="@+id/face_detection_baseview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#59000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/realOrSpoofView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textAlignment="center"
+            android:textColor="#FFF223"
+            android:textSize="26sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <com.idmission.passivefacedetection.OvalView
+        android:id="@+id/oval"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/presenceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@android:drawable/presence_offline" />
+
+    <TextView
+        android:id="@+id/envView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Not In Prd"
+        android:textColor="#CE0F0F"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_header_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/presenceView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/liveness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#6F000000"
+            android:padding="3dp"
+            android:text="0.0000"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/modelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/back_img_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/camera_switch"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/back_cancel_arrow"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/frame_face_inside_txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/fd_frame_face_inside"
+            android:textColor="#606060"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/camera_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:paddingRight="5dp"
+        android:paddingBottom="12dp" />
+
+    <ImageButton
+        android:id="@+id/capture_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/powered_by_label"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:clickable="true"
+        android:padding="5dp"
+        android:src="@drawable/cam_button"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/fd_done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="@string/done" />
+
+    <TextView
+        android:id="@+id/powered_by_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:paddingRight="3dp"
+        android:paddingBottom="1dp"
+        android:text="@string/powered_by_idmission"
+        android:textColor="#606060"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

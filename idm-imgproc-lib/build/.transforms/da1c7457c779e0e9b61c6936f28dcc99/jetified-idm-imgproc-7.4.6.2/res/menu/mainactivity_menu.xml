@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/debug_drawing"
+        android:title="Debug Drawing">
+        <menu>
+            <item
+                android:id="@+id/draw_tracking_rectangles"
+                android:checkable="true"
+                android:checked="true"
+                android:title="Tracking Rectangles"/>
+            <item
+                android:id="@+id/draw_template_overlay"
+                android:checkable="true"
+                android:checked="true"
+                android:title="Template Overlay"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/acquire_images"
+        android:checkable="true"
+        android:checked="true"
+        android:title="Acquire Images"/>
+    <item
+        android:id="@+id/detect_glare"
+        android:checkable="true"
+        android:checked="true"
+        android:title="Detect Glare"/>
+    <item
+        android:id="@+id/passport_mode"
+        android:checkable="true"
+        android:checked="false"
+        android:title="Passport Mode"/>
+    <!-- <item
+        android:id="@+id/highres_single_shot_mode"
+        android:checkable="true"
+        android:checked="false"
+        android:title="High Resolution Single Shot Mode"/> -->
+    <item
+        android:id="@+id/save_to_external_storage"
+        android:checkable="true"
+        android:checked="true"
+        android:title="Save Data"/>
+
+</menu>

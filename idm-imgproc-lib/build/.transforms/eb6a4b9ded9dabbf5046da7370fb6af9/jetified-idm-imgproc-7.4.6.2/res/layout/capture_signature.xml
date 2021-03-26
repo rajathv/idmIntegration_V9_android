@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/back_img_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/back_cancel_arrow"
+                android:clickable="true" />
+
+            <com.idmission.signature.SignatureView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:sign="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/signature_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                sign:enableSignature="true"
+                sign:penColor="@color/signature_pen_color"
+                sign:penSize="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2b2b2b"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="left"
+                    android:text="Cancel"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/clear_pad"
+                    style="@style/Base.TextAppearance.AppCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/clear_pad"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/save_sign"
+                    style="@style/Base.TextAppearance.AppCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/done"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/powered_by_label_portrait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:text="@string/powered_by_idmission"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

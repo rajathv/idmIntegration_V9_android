@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.idmission.imageprocessing"
+    android:versionCode="20201215"
+    android:versionName="7.4.6.2" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:label="@string/app_name"
+        android:largeHeap="true" >
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+
+        <activity
+            android:name="com.idmission.imageprocessing.SkipImageProcessingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.SkipImageProcessingPortraitActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.fastfillfeature.FastFillActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.fastfillfeature.FastFillModelActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.slantimagecapture.SlantedIdCapturePortraitActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.SkipImageProcessingFotoapparat"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.slantimagecapture.SlantedIdCaptureLandscapeActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.ImageProcessingUploadActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.facedetection.FaceDetectionActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.facedetection.FaceDetectionOpenCVFotoapparat"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.facedetection.FaceMatchingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.VerifyCustomerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.ImageProcessingAndFaceMatchingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.GenericServiceCallActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.CompleteOperation"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.carddetection.CardDetectionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.carddetection.CardDetectionModelActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.idmission.imageprocessing.ImagePreviewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.facedetection.FaceImagePreviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.voicerecording.VoiceRecordingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.idmission.voicerecording.CustomizeVoiceRecordingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.idmission.facedetection.FaceDetectionNewActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.facedetection.mlkit.FaceContourDetectionActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.passivefacedetection.PassiveFaceDetectionActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.fourFingCapture.CameraFingerCaptureActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.fourFingCapture.FingerDetectionActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.fourFingCapture.FingerDetectionModelActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.scanbarcode.MLkitBarcodeScannerActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.fingerprintcapture.PairDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.peripheral.impl.futronic.FutronicFingerprintPreviewImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.peripheral.impl.integratedbiometrics.WatsonMiniFingerprintPreviewImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.peripheral.impl.morpho.MorphoFingerprintPreviewImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.InstructionActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.videorecording.VideoRecordingActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver android:name="com.idmission.peripheral.impl.futronic.UsbDevicesBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.idmission.client.PermissionAcceptActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.idmission.scanbarcode.BarcodeScannerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.scanbarcode.BarcodeScannerViewLandscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.scanbarcode.BarcodeScannerViewPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.signature.CaptureSignatureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <!-- <activity -->
+        <!-- android:name="com.idmission.signature.SignatureCaptureActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden|screenSize" -->
+        <!-- android:theme="@style/Theme.AppCompat.Translucent" /> -->
+        <activity
+            android:name="com.idmission.signature.SignatureCaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.snippet.SnippetActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensor"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.idmission.snippet.SnippetCaptureActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensor"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.idmission.imageprocessing.UpdateCustomerActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.CustomizedProductExecutionActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.imageprocessing.IDValidationAndVideoMatchingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.videoConference.VideoConference"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.idmission.docdetect.IDCaptureModelActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.idmission.docdetect.IDCaptureModelLandscapeActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+    </application>
+
+</manifest>

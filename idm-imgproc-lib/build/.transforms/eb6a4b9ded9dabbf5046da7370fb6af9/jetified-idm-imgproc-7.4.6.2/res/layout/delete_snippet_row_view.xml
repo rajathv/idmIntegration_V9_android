@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/croppedImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5" />
+
+        <ImageView
+            android:id="@+id/subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:src="@drawable/cancelsnippet" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@color/Black"
+        android:paddingTop="10dp" />
+</LinearLayout>

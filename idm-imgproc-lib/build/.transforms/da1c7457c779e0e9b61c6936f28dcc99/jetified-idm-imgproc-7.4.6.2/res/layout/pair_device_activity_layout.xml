@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/device_type_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_fingerprint_device" />
+
+        <Spinner
+            android:id="@+id/device_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_type_container"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_timeout_seconds" />
+
+        <EditText
+            android:id="@+id/timeout_value_edttxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/min_img_size_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeout_container"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minimum_image_size" />
+
+        <EditText
+            android:id="@+id/min_img_size_edttxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pairAndConnectBt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/button"
+            android:text="@string/connect"
+            android:textColor="@drawable/text"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

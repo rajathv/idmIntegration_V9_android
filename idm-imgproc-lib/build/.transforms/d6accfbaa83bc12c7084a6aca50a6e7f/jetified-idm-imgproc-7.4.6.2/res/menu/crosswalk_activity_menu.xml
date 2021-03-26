@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/crosswalk_action_refresh"
+        android:showAsAction="always"
+        android:title="@string/refresh">
+    </item>
+    <item
+        android:id="@+id/crosswalk_action_resume"
+        android:showAsAction="ifRoom"
+        android:title="@string/resume">
+    </item>
+    <!-- <item
+        android:id="@+id/crosswalk_toggle_hw_accel"
+        android:showAsAction="ifRoom"
+        android:title="Android Webview">
+    </item>  -->
+    <item
+        android:id="@+id/crosswalk_disable_webview"
+        android:showAsAction="ifRoom"
+        android:title="@string/disable_webview">
+    </item>
+    <item
+        android:id="@+id/crosswalk_change_password"
+        android:showAsAction="ifRoom"
+        android:title="@string/change_password">
+    </item>
+    <item
+        android:id="@+id/crosswalk_action_settings"
+        android:showAsAction="ifRoom"
+        android:title="@string/settings">
+    </item>
+	<item
+        android:id="@+id/crosswalk_action_about"
+        android:showAsAction="ifRoom"
+        android:title="@string/about_appit">
+    </item>
+	<item
+        android:id="@+id/crosswalk_action_exit"
+        android:showAsAction="ifRoom"
+        android:title="@string/exit">
+    </item>
+ <!--   <item
+        android:id="@+id/crosswalk_action_calc"
+        android:showAsAction="ifRoom"
+        android:title="Calculate">
+    </item> -->
+</menu>

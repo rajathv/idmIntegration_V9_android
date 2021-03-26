@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.idmission.acquisitionapp.views.CameraJavaView
+        android:id="@+id/back_camera_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" />
+
+    <com.idmission.acquisitionapp.views.CameraJavaView
+        android:id="@+id/front_camera_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:rotation="270">
+
+            <ImageButton
+                android:id="@+id/camera_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:rotation="270">
+
+            <ImageButton
+                android:id="@+id/rot_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:rotation="270">
+
+            <ImageButton
+                android:id="@+id/rot_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:rotation="270">
+
+            <ImageButton
+                android:id="@+id/flash_toggle_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:rotation="270"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="8"
+        android:text="Show Your Face"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/back_img_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/back_cancel_arrow_portrait"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/light_hint_imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="23dp"
+        android:layout_toRightOf="@+id/back_img_button"
+        android:clickable="true"
+        android:rotation="270" />
+
+    <ImageView
+        android:id="@+id/smile_hint_imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="23dp"
+        android:layout_toRightOf="@+id/back_img_button"
+        android:clickable="true"
+        android:rotation="270" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/footer"
+        android:background="#00000000">
+
+        <ImageButton
+            android:id="@+id/flash_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:rotation="270" />
+
+        <TextView
+            android:id="@+id/threshold_values"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:rotation="270"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="8"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

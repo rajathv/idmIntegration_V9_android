@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.idmission.acquisitionapp.views.OpenCVCameraView
+        android:id="@+id/camera_surface_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.idmission.acquisitionapp.views.OverlayView
+        android:id="@+id/overlay_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/mainInfoTextMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text=""
+        android:visibility="invisible"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/extraInfoTextMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mainInfoTextMessage"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <ProgressBar
+        android:id="@+id/scanningProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@id/mainInfoTextMessage"
+        android:layout_alignRight="@id/mainInfoTextMessage"
+        android:layout_below="@+id/mainInfoTextMessage"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Acquired Images"
+        android:focusableInTouchMode="false"
+        android:max="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:progress="0"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageButton
+            android:id="@+id/exit_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_cancel_arrow_portrait"
+            android:clickable="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/intensityOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/rotate_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/cam_rot_left"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_cancel_arrow"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/templateNameOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Searching for ID ..."
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/rotate_btn_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/cam_rot_right"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/capture_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#00000000"
+        android:clickable="true"
+        android:src="@drawable/cam_button"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/processingDocumentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/logView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:visibility="gone" />
+        </ScrollView>
+
+        <!-- <LinearLayout
+            android:id="@+id/data_processing_progress_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <WebView
+                android:id="@+id/progressbar_webview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </LinearLayout> -->
+    </RelativeLayout>
+
+</RelativeLayout>

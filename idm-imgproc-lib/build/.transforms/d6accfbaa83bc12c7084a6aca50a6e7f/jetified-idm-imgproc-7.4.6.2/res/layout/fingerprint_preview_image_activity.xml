@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/infoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llFooter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/captureFpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_correct"
+            android:background="@drawable/roundcorner" />
+
+        <ImageButton
+            android:id="@+id/cancleFpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.5"
+            android:scaleType="fitCenter"
+            android:background="@drawable/roundcorner"
+            android:src="@drawable/ic_cancel" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ifiqTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/errorTv"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/errorTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llFooter"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/no_fingerprint_device"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:textColor="@color/holo_red_dark" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ifiqTv"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/progressBar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/preview_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/preview_image"
+            android:minHeight="100dp"
+            android:minWidth="100dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

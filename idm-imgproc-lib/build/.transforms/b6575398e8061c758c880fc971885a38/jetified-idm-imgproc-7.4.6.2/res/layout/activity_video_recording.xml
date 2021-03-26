@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videoParentFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/preview_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/footer">
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/exit_video_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:src="@drawable/back_cancel_arrow" />
+
+            <ImageView
+                android:id="@+id/min_max_Screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:src="@drawable/minrec"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/preview_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#59000000"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/play_preview_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/pause_icon" />
+
+                <ImageView
+                    android:id="@+id/done_rec_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/donevideorec" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTextScrollData"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/editTextScrollData"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_above="@+id/progressbar"
+            android:gravity="bottom|center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:scrollbars="vertical"
+            android:textAlignment="gravity"
+            android:textColor="@color/holo_white_dark"></TextView>>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/record_button"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/record_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="7dp"
+            android:src="@drawable/start_recording_video" />
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#59000000"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/toggleMuteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="3dp"
+                android:src="@drawable/unmute_vid_rec" />
+
+            <ImageView
+                android:id="@+id/toggle_camera_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="3dp"
+                android:src="@drawable/front_cam" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/powered_by_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingBottom="1dp"
+            android:paddingRight="3dp"
+            android:text="@string/powered_by_idmission"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>

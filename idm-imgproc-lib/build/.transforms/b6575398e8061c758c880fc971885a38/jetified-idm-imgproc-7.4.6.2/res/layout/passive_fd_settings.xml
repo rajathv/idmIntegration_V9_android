@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oval Size" />
+
+    <EditText
+        android:id="@+id/oval_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Face detection threshold" />
+
+    <EditText
+        android:id="@+id/fd_threshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frame count for average" />
+
+    <EditText
+        android:id="@+id/frame_count_for_average"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <CheckBox
+        android:id="@+id/show_real_spoof_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show real spoof message" />
+
+    <Button
+        android:id="@+id/settings_done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done" />
+
+</LinearLayout>

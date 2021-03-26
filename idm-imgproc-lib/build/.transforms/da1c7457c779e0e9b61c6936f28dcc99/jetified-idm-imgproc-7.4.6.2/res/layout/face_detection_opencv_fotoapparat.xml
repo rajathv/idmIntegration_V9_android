@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <io.fotoapparat.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.idmission.facedetection.FaceView
+        android:id="@+id/faceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/camera_preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="8"
+        android:text="Show Your Face"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/back_img_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/back_cancel_arrow"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/light_hint_imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_img_button"
+        android:layout_margin="5dp" />
+
+    <ImageView
+        android:id="@+id/smile_hint_imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/back_img_button"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/threshold_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="8"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/camera_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:paddingBottom="12dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/powered_by_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/powered_by_idmission"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="1dp"
+        android:paddingRight="3dp"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <io.fotoapparat.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.idmission.fourFingCapture.CustomView
+        android:id="@+id/custom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/fingerprint_header_stripe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:src="@drawable/back_cancel_arrow" />
+
+        <TextView
+            android:id="@+id/fingerprint_header_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/fingerprint_header_stripe">
+
+        <ImageView
+            android:id="@+id/close_far_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:src="@drawable/hand_position_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/close_far_imageview"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/finger_close_txtview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/finger_too_close" />
+
+            <TextView
+                android:id="@+id/finger_far_txtview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/finger_too_far" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/toggle_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Flash"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/detected_face"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/powered_by_label_portrait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:tag=""
+        android:text="@string/powered_by_idmission"
+        android:textColor="#606060"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</RelativeLayout>

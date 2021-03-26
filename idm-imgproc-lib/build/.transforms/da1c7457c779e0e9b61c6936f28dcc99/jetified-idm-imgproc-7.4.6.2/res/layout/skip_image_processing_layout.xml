@@ -1,0 +1,274 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.idmission.acquisitionapp.views.OpenCVCameraView
+        android:id="@+id/camera_surface_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.idmission.acquisitionapp.views.OverlayView
+        android:id="@+id/overlay_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/center_textview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="8"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/center_textview_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="8"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/center_portrait_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:rotation="270"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="8"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/page_title_image_header1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/exit_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_cancel_arrow_portrait"
+            android:clickable="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/bottom_landscape_txtview_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="8"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/bottom_landscape_txtview_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="8"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/bottom_landscape_txtview_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="8"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/page_title_image_header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_cancel_arrow"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/header_landscape_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="8"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/header_landscape_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="8"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/page_title_image_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bottom_portrait_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/capture_btn"
+        android:rotation="270"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="8"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bottom_portrait_textview2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom|center_horizontal"
+        android:rotation="270"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="8"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/portrait_page_title_image_header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/capture_btn"
+        android:rotation="0" />
+
+    <TextView
+        android:id="@+id/bottom_portrait_textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:rotation="270"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="8"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/header_portrait_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:rotation="270"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="8"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/header_portrait_textview2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="top|center_horizontal"
+        android:rotation="270"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="8"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/portrait_page_title_image_header1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:rotation="0" />
+
+    <ImageButton
+        android:id="@+id/capture_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#00000000"
+        android:clickable="true"
+        android:padding="5dp"
+        android:src="@drawable/cam_button"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/processingDocumentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:visibility="gone"></RelativeLayout>
+
+</RelativeLayout>

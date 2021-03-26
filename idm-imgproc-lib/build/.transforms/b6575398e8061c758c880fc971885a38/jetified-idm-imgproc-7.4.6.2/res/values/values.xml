@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="AllFPDeviceName">
+        <item>Select Device</item>
+        <item>Eikon Touch 510</item>
+        <item>Evolute Impress</item>
+        <item>IB Watson Mini</item>
+        <item>Futronic FS80/FS88</item>
+        <item>Morpho MSO1300E2</item>
+    </string-array>
+    <string-array name="AllFPDeviceNameLollipop">
+        <item>Select Device</item>
+        <item>Eikon Touch 510</item>
+        <item>Evolute Impress</item>
+        <item>IB Watson Mini</item>
+        <item>Futronic FS80/FS88</item>
+    </string-array>
+    <string-array name="DeviceName">
+        <item>Select Device</item>
+        <item>AMDL DA350</item>
+        <item>Eikon Touch 510</item>
+        <item>Evolute Idfyr</item>
+        <item>Evolute Impress</item>
+        <item>Futronic FS80/FS88</item>
+        <item>Morpho MSO1300E2</item>
+        <item>Teklogik P25</item>
+        <item>Teklogik P200</item>
+    </string-array>
+    <string-array name="DeviceNameLollipop">
+        <item>Select Device</item>
+        <item>AMDL DA350</item>
+        <item>Eikon Touch 510</item>
+        <item>Evolute Idfyr</item>
+        <item>Evolute Impress</item>
+        <item>Futronic FS80/FS88</item>
+        <item>Teklogik P25</item>
+        <item>Teklogik P200</item>
+    </string-array>
+    <string-array name="DeviceTimeOutInMins">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>110</item>
+        <item>120</item>
+        <item>130</item>
+        <item>140</item>
+        <item>150</item>
+        <item>160</item>
+        <item>170</item>
+        <item>180</item>
+        <item>190</item>
+        <item>200</item>
+        <item>210</item>
+        <item>220</item>
+        <item>230</item>
+        <item>240</item>
+        <item>250</item>
+        <item>260</item>
+        <item>270</item>
+        <item>280</item>
+        <item>290</item>
+        <item>300</item>
+        <item>310</item>
+        <item>320</item>
+        <item>330</item>
+        <item>340</item>
+        <item>350</item>
+        <item>360</item>
+        <item>370</item>
+        <item>380</item>
+        <item>390</item>
+        <item>400</item>
+        <item>410</item>
+        <item>420</item>
+        <item>430</item>
+        <item>440</item>
+        <item>450</item>
+        <item>460</item>
+        <item>470</item>
+        <item>480</item>
+        <item>490</item>
+        <item>500</item>
+        <item>510</item>
+        <item>520</item>
+        <item>530</item>
+        <item>540</item>
+        <item>550</item>
+        <item>560</item>
+        <item>570</item>
+        <item>580</item>
+        <item>590</item>
+        <item>600</item>
+        <item>610</item>
+        <item>620</item>
+        <item>630</item>
+        <item>640</item>
+        <item>650</item>
+        <item>660</item>
+        <item>670</item>
+        <item>680</item>
+        <item>690</item>
+        <item>700</item>
+        <item>710</item>
+        <item>720</item>
+        <item>730</item>
+        <item>740</item>
+
+    </string-array>
+    <string-array name="STQCFPDeviceName">
+        <item>Select Device</item>
+        <item>Evolute Impress</item>
+        <item>Futronic FS88</item>
+        <item>Morpho MSO1300E2</item>
+    </string-array>
+    <string-array name="STQCFPDeviceNameLollipop">
+        <item>Select Device</item>
+        <item>Evolute Impress</item>
+        <item>Futronic FS88</item>
+    </string-array>
+    <string-array name="WebDeviceTimeOutInSecs">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="auto">
+        <item>Auto</item>
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="session_type_choices">
+        <item>Real</item>
+        <item>Real - Smudged</item>
+        <item>Photo Copy</item>
+        <item>Screen</item>
+        <item>Card Printer</item>
+    </string-array>
+    <color name="Black">#000000</color>
+    <color name="black_evolv">#121C2D</color>
+    <color name="black_translucent">#B0000000</color>
+    <color name="border">#E50000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="corner">@android:color/white</color>
+    <color name="green">#00FF00</color>
+    <color name="guideline">@color/white_translucent</color>
+    <color name="holo_black_dark_semi_transparent">#80000000</color>
+    <color name="holo_red_dark">#cc0000</color>
+    <color name="holo_red_dark_semi_transparent">#80cc0000</color>
+    <color name="holo_white_dark">#ffffff</color>
+    <color name="holo_white_dark_semi_transparent">#66ffffff</color>
+    <color name="penRoyalBlue">#4169e1</color>
+    <color name="signature_pen_color">#000000</color>
+    <color name="success_color">#33CC33</color>
+    <color name="surrounding_area">@color/black_translucent</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_translucent">#AAFFFFFF</color>
+    <color name="zxing_custom_possible_result_points">#903A89CF</color>
+    <color name="zxing_custom_result_view">#b0000000</color>
+    <color name="zxing_custom_viewfinder_laser">#1976D2</color>
+    <color name="zxing_custom_viewfinder_mask">#60000000</color>
+    <color name="zxing_possible_result_points">#c0ffbd21</color>
+    <color name="zxing_result_view">#b0000000</color>
+    <color name="zxing_status_text">#ffffffff</color>
+    <color name="zxing_transparent">#00000000</color>
+    <color name="zxing_viewfinder_laser">#ffcc0000</color>
+    <color name="zxing_viewfinder_mask">#60000000</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="border_thickness">3dp</dimen>
+    <dimen name="content_padding">16dp</dimen>
+    <dimen name="content_padding_half">8dp</dimen>
+    <dimen name="corner_length">20dp</dimen>
+    <dimen name="corner_thickness">5dp</dimen>
+    <dimen name="guideline_thickness">1px</dimen>
+    <dimen name="pen_size">3dp</dimen>
+    <dimen name="snap_radius">3dp</dimen>
+    <dimen name="target_radius">24dp</dimen>
+    <drawable name="Black">#000000</drawable>
+    <drawable name="White">#FFFFFF</drawable>
+    <item name="zxing_back_button" type="id"/>
+    <item name="zxing_camera_error" type="id"/>
+    <item name="zxing_decode" type="id"/>
+    <item name="zxing_decode_failed" type="id"/>
+    <item name="zxing_decode_succeeded" type="id"/>
+    <item name="zxing_possible_result_points" type="id"/>
+    <item name="zxing_preview_failed" type="id"/>
+    <item name="zxing_prewiew_size_ready" type="id"/>
+    <string name="CNew">Enter New Folder Name</string>
+    <string name="Int">Internal</string>
+    <string name="New">New Folder</string>
+    <string name="Small">false</string>
+    <string name="Success">000</string>
+    <string name="about">About</string>
+    <string name="about_app">About</string>
+    <string name="about_appit">About Appit</string>
+    <string name="action_bar_header">Inform</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">add</string>
+    <string name="add_field">Add Snippet Field</string>
+    <string name="address_capturing_identification">Capturing identification</string>
+    <string name="align_barcode_inside_rectangle">Align BARCODE inside rectangle</string>
+    <string name="align_document_img_capture">Align document inside the corners and wait, \n we\'ll take the photo for you.</string>
+    <string name="align_document_inside_rectangle">Align document inside rectangle.</string>
+    <string name="align_id_and_mrz_inside_rectangle">Align document and MRZ inside rectangle</string>
+    <string name="all">Check All</string>
+    <string name="app_name">eVolv</string>
+    <string name="application_version">Application Version</string>
+    <string name="auto_focus_error">Could not set auto focus on camera</string>
+    <string name="back">BACK</string>
+    <string name="back_camera_not_found">Back camera not found</string>
+    <string name="barcode_error_message">Barcode is not detected please try again</string>
+    <string name="barcode_mrz_error_message">MRZ or Barcode is not detected please try again</string>
+    <string name="barcode_mrz_not_download">Downloading required image processing files.</string>
+    <string name="barcode_mrz_not_found">BARCODE or MRZ not found for the selected id.</string>
+    <string name="barcode_scan">Barcode Scan</string>
+    <string name="battery_status">Battery Status: </string>
+    <string name="buy_battery">Shop For Battery</string>
+    <string name="camera_error">Unable to start the camera, please restart the device.</string>
+    <string name="camera_movement_fc_detect">Hold camera steady.</string>
+    <string name="cancel">Cancel</string>
+    <string name="capture_fingerprint">Capture Fingerprint</string>
+    <string name="capturing_detail">Capturing Details...</string>
+    <string name="capturing_id_scanbarcode">Scan Barcode</string>
+    <string name="capturing_id_scanbarcode_msg">Align barcode inside the rectangle and wait.</string>
+    <string name="capturing_id_scanbarcode_pdf_417_msg">Align PDF 417 barcode inside the rectangle and wait.</string>
+    <string name="capturing_identification">Capturing identification</string>
+    <string name="card_not_detected_msg">Card not detected.</string>
+    <string name="change_password">Change Password</string>
+    <string name="check_readability">Check readability</string>
+    <string name="clear_pad">ClearPad</string>
+    <string name="click_picture">*Take Picture</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="connect">Connect</string>
+    <string name="connect_device">Connect device</string>
+    <string name="connect_device_message">Please unplug and plug the USB fingerprint device. Press Continue when finished.</string>
+    <string name="connecting">Connecting</string>
+    <string name="continue_title">Continue</string>
+    <string name="create">Create</string>
+    <string name="default_language">Default Language</string>
+    <string name="delta_down_threshold">Delta down threshold</string>
+    <string name="delta_left_threshold">Delta left threshold</string>
+    <string name="delta_right_threshold">Delta right threshold</string>
+    <string name="delta_up_threshold">Delta up threshold</string>
+    <string name="detecting_face">Detecting face</string>
+    <string name="device_configuration">Device Configuration</string>
+    <string name="device_connected">Device connected</string>
+    <string name="device_impl_fs80">"com.idmission.peripheral.impl.futronic.DeviceImpl"</string>
+    <string name="device_not_supported_4f_feature_msg">Your device does not support this feature. Minimum requirement: 2GB RAM, 8MP Rear Camera.</string>
+    <string name="device_not_supported_msg">Device not supported.</string>
+    <string name="device_timeout_seconds">Device Timeout(seconds)</string>
+    <string name="directories">Folders</string>
+    <string name="disable_hw_accel">Disable HW Acceleration</string>
+    <string name="disable_webview">Disable Webview</string>
+    <string name="done">Done</string>
+    <string name="downloaded_location">Request and Response is downloaded at location :</string>
+    <string name="empty_response_msg">Error in processing your request.Empty response received.</string>
+    <string name="enable_gps_msg">Enable GPS.</string>
+    <string name="enable_hw_accel">Enable HW Acceleration</string>
+    <string name="enable_location">Please enable location settings.</string>
+    <string name="enable_webview">Enable Webview</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="excellent">Excellent</string>
+    <string name="exit">Exit</string>
+    <string name="explenation">Sorry, but i could not find a camera on your device.</string>
+    <string name="ext">External</string>
+    <string name="face_api_error">Face API error</string>
+    <string name="face_api_not_available">Face API not available. Please try again.</string>
+    <string name="face_capture_instruction_continue">Continue</string>
+    <string name="face_capture_preview_header">Detect face preview</string>
+    <string name="face_capture_success_msg">Success</string>
+    <string name="face_detected">Face detected.</string>
+    <string name="face_detection_face_detection_failed">Face detection failed!</string>
+    <string name="face_detection_face_verification_failed">Verification failed!</string>
+    <string name="face_detection_instruction">Take an interactive selfie.\nDo not wear GLASSES or HAT.\nDo not have LIGHT behind you.\nWhen you see turn arrow, please TURN your head slowly.</string>
+    <string name="face_detection_keep_mobile_straight">Keep mobile straight and align with face.</string>
+    <string name="face_detection_verifying_face">Verifying face image</string>
+    <string name="face_image_preview_msg">Verify your eyes are open and there is no excessive light in the background.</string>
+    <string name="face_not_detected">Live face not detected</string>
+    <string name="fair">Fair</string>
+    <string name="fd_face_model_downloading">Please wait...\nRequired components are being downloaded</string>
+    <string name="fd_frame_face_inside">Frame your face inside the oval and look directly into the camera.</string>
+    <string name="fd_look_straight_msg">Look straight into the camera</string>
+    <string name="fd_too_dark_error">Excessive darkness detected. Please reduce darkness to proceed.</string>
+    <string name="fd_too_much_ligth_error">Excessive backlighting detected. Please reduce backlighting to proceed.</string>
+    <string name="files">Files</string>
+    <string name="finger_too_close">TOO CLOSE</string>
+    <string name="finger_too_far">TOO FAR</string>
+    <string name="focus">Focus</string>
+    <string name="format_angle">\tangle: %1$d</string>
+    <string name="format_angle1">\tangle1: %1$d</string>
+    <string name="format_angle2">\tangle2: %1$d</string>
+    <string name="format_angle3">\tangle3: %1$d</string>
+    <string name="format_base_frame_index">Base frame index is %1$d.</string>
+    <string name="format_base_template_index">Base template index is %1$d.</string>
+    <string name="format_capturing_from_device_put_finger">Capturing from %1$s device. Please put your finger on the device.</string>
+    <string name="format_cbeff_product_type">\tCBEFF product type: %1$d</string>
+    <string name="format_classification_failed">Classification failed. Status: %1$s</string>
+    <string name="format_core_n_of_m">\tCore %1$d of %2$d</string>
+    <string name="format_created_template_containing_n_faces">Created template containing %1$d faces</string>
+    <string name="format_curvature">\tcurvature: %1$d</string>
+    <string name="format_delta_n_of_m">\tDelta %1$d of %2$d</string>
+    <string name="format_double_core_n_of_m">\tDouble core %1$d of %2$d</string>
+    <string name="format_enrollment_successful">Enrollment performed successfully.</string>
+    <string name="format_enrollment_unsuccessful">Enrollment was unsuccessful. Status: %1$s</string>
+    <string name="format_extracted_voice_audio_file_saved_to">Extracted voice audio file saved to %1$s</string>
+    <string name="format_extraction_failed">Extraction failed: %1$s</string>
+    <string name="format_extraction_status">Extraction status\t%1$s</string>
+    <string name="format_face_extraction_using_eyes_failed">Failed to extract. Reason: %1$s</string>
+    <string name="format_face_image_saved_to">Face image saved to %1$s</string>
+    <string name="format_face_index_score">\tFace index: %1$d; Score: %2$d;</string>
+    <string name="format_face_rect">\tLocation = (%1$d, %2$d), width = %3$d, height = %4$d</string>
+    <string name="format_face_template_saved_to">Face template saved to %1$s</string>
+    <string name="format_faces_extracted">Faces extracted: %1$d</string>
+    <string name="format_faces_found">Faces found: %1$d</string>
+    <string name="format_failed_to_create_or_generalize_template">Failed to create or generalize template. Status: %1$s</string>
+    <string name="format_finger_image_saved_to">Finger image saved to %1$s</string>
+    <string name="format_finger_record_saved_to">Finger record saved to %1$s</string>
+    <string name="format_finger_segment_saved_to">Finger segment saved to %1$s</string>
+    <string name="format_fingerprint_index_score">\tFingerprint index: %1$d; Score: %2$d;</string>
+    <string name="format_fingerprint_pattern_class_confidence">Fingerprint pattern class is \"%1$s\", confidence %2$.2f</string>
+    <string name="format_fingerprint_quality">Fingerprint quality is %1$s</string>
+    <string name="format_first_eye_location_confidence">\tRight: location = (%1$d, %2$d), confidence = %3$d</string>
+    <string name="format_found_faces">Found %1$d face(s):</string>
+    <string name="format_found_irises">Found %1$d iris(es)</string>
+    <string name="format_gender_and_confidence">Gender: %1$s, Confidence: %2$d</string>
+    <string name="format_generalization_failed">Generalization failed: %1$s</string>
+    <string name="format_generalized_face_record_saved_to">Generalized face record saved to %1$s</string>
+    <string name="format_generalized_finger_record_saved_to">Generalized finger record saved to %1$s</string>
+    <string name="format_generalized_palm_record_saved_to">Generalized palm record saved to %1$s</string>
+    <string name="format_gray_level_spread">GrayScaleUtilisation\t%1$d</string>
+    <string name="format_height">\tHeight: %1$d</string>
+    <string name="format_horizontal_resolution">\tHorizontal resolution: %1$d</string>
+    <string name="format_identification_unsuccessful">Identification was unsuccessful. Status: %1$s</string>
+    <string name="format_impression_type">\tImpression type: %1$s</string>
+    <string name="format_interlane">Interlane\t%1$d</string>
+    <string name="format_iris_index_score">\tIris index: %1$d; Score: %2$d;</string>
+    <string name="format_iris_pupil_concentricity">IrisPupilConcentricity\t%1$d</string>
+    <string name="format_iris_pupil_contrast">IrisPupilContrast\t%1$d</string>
+    <string name="format_iris_radius">IrisRadius\t%1$d</string>
+    <string name="format_iris_record_saved_to">Iris record saved to %1$s</string>
+    <string name="format_iris_sclera_contrast">IrisScleraContrast\t%1$d</string>
+    <string name="format_loaded_image_file">Loaded image file: %1$s</string>
+    <string name="format_loaded_template_file">Loaded template file: %1$s</string>
+    <string name="format_location_confidence">\tLocation = (%1$d, %2$d), confidence = %3$d</string>
+    <string name="format_margin_adequacy">MarginAdequacy\t%1$d</string>
+    <string name="format_matched_with_id_and_score">Matched with ID: \'%1$s\' with score %2$d</string>
+    <string name="format_minutia_count">\tMinutia count: %1$d</string>
+    <string name="format_minutia_g">\tg: %1$d</string>
+    <string name="format_minutia_n_of_m">\tMinutia %1$d of %2$d</string>
+    <string name="format_minutia_quality">\tquality: %1$d</string>
+    <string name="format_missing_positions_selected">Missing positions selected: %1$s</string>
+    <string name="format_multiface_template_saved_to">Multiface NTemplate saved to %1$s</string>
+    <string name="format_multifinger_template_saved_to">Multifinger NTemplate saved to %1$s</string>
+    <string name="format_n_faces">%1$d faces</string>
+    <string name="format_n_fingers">%1$d fingers</string>
+    <string name="format_n_irises">%1$d irises</string>
+    <string name="format_n_voices">%1$d voices</string>
+    <string name="format_nfposition_selected">NFPosition selected: %1$s</string>
+    <string name="format_not_activated">Not activated: %1$s</string>
+    <string name="format_number_not_valid">Number not valid: %1$s</string>
+    <string name="format_number_not_valid_with_range">Number not valid: %1$s. Must be in range from 3 to 10.</string>
+    <string name="format_obtaining_licenses">Obtaining licenses: %1$s</string>
+    <string name="format_overall_quality">Overall quality\t%1$d</string>
+    <string name="format_palm_index_score">\tPalm index: %1$d; Score: %2$d;</string>
+    <string name="format_palm_record_saved_to">Palm record saved to %1$s</string>
+    <string name="format_pattern_class">\tPattern class: %1$s</string>
+    <string name="format_phrase_id">\tPhrase id: %1$d</string>
+    <string name="format_position">\tPosition: %1$s</string>
+    <string name="format_processing_frame">Processing frame: %1$d</string>
+    <string name="format_pupil_boundary_circularity">PupilBoundaryCircularity\t%1$d</string>
+    <string name="format_pupil_to_iris_ratio">PupilToIrisRatio\t%1$d</string>
+    <string name="format_reading">Reading %1$s</string>
+    <string name="format_records_found">%1$d records found.</string>
+    <string name="format_ridge_counts_type">\tRidge counts type: %1$s</string>
+    <string name="format_score">score = %1$d</string>
+    <string name="format_second_eye_location_confidence">\tLeft: location = (%1$d, %2$d), confidence = %3$d</string>
+    <string name="format_segment_position">%1$s: %2$s</string>
+    <string name="format_segmentation_failed">Segmentation failed: %1$s</string>
+    <string name="format_segmented_iris_image_saved_to">Cropped and masked iris image saved to %1$s</string>
+    <string name="format_sharpness">Sharpness\t%1$d</string>
+    <string name="format_size">\tSize: %1$d</string>
+    <string name="format_template_creation_unsuccessful">Template creation was unsuccessful. Status: %1$s</string>
+    <string name="format_template_g">\tG: %1$d</string>
+    <string name="format_template_identified_score">=> Template [%1$s] identified. Score: %2$d.</string>
+    <string name="format_template_not_identified_score">=> Template [%1$d] not identified. Score: %2$d.</string>
+    <string name="format_template_not_verified_score">=> Template not verified. Score: %1$d.</string>
+    <string name="format_template_quality">\tQuality: %1$d</string>
+    <string name="format_template_saved_to">Template saved to %1$s</string>
+    <string name="format_template_scored">Template [%1$d] scored {%2$d}</string>
+    <string name="format_template_verified_score">=> Template verified. Score: %1$d.</string>
+    <string name="format_token_face_background_uniformity">\tBackground uniformity score = %1$3d</string>
+    <string name="format_token_face_grayscale_density">\tGrayscale density score = %1$3d</string>
+    <string name="format_token_face_image_creation_failed">Token face image creation failed! Status = %1$s</string>
+    <string name="format_token_face_quality_attributes">Global token face image quality score = %1$3d. Tested attributes details:</string>
+    <string name="format_token_face_saved_to">Token face image saved to %1$s</string>
+    <string name="format_token_face_sharpness">\tSharpness score = %1$3d</string>
+    <string name="format_two_iris_template_saved_to">Two iris template saved to %1$s</string>
+    <string name="format_url_not_valid">URL not valid: %1$s</string>
+    <string name="format_usable_iris_area">UsableIrisArea\t%1$d</string>
+    <string name="format_vertical_resolution">\tVertical resolution: %1$d</string>
+    <string name="format_voice_index_score">\tVoice index: %1$d; Score: %2$d;</string>
+    <string name="format_voice_record_saved_to">Voice record saved to %1$s</string>
+    <string name="format_voice_start_duration">"Voice in source starts at: %1$d, duration: %2$d.</string>
+    <string name="format_width">\tWidth: %1$d</string>
+    <string name="format_x">\tx: %1$d</string>
+    <string name="format_y">\ty: %1$d</string>
+    <string name="fp_capture_instruction"/>
+    <string name="fp_capture_instruction_continue">Continue</string>
+    <string name="front_camera_not_found">Front camera not found</string>
+    <string name="glare">Glare</string>
+    <string name="glare_detected">There are too many bright spots on the document.  Try holding the document differently until the bright red spots disappear</string>
+    <string name="glare_threshold">Glare threshold</string>
+    <string name="goUp">Go Up</string>
+    <string name="good">Good</string>
+    <string name="hello">Hello World!</string>
+    <string name="hint_open_candidate_templates_number">Number of candidate templates to open</string>
+    <string name="hint_open_candidates_number">Number of candidates to open</string>
+    <string name="hint_open_images_number">Number of images to open</string>
+    <string name="hint_open_images_number_with_range">Number of images to open (from 3 to 10)</string>
+    <string name="hint_open_records_number">Number of records to open</string>
+    <string name="hint_open_templates_number">Number of templates to open</string>
+    <string name="hint_url">URL (only if the video is on internet)</string>
+    <string name="hold_document_here">Hold document here.\nIt will scan automatically.</string>
+    <string name="hold_steady">Hold steady</string>
+    <string name="http_error_404_msg">Resource URL could not be found. Please correct URL.</string>
+    <string name="http_error_500_msg">Error in processing your request. Internal Server Error.</string>
+    <string name="http_error_502_msg">Error in processing your request. Bad gateway.</string>
+    <string name="http_error_503_msg">Error in processing your request. Please try after sometime.</string>
+    <string name="http_error_504_msg">Error in processing your request. Gateway timeout.</string>
+    <string name="id_capture_instruction">Hold your ID straight and steady in front of the camera so the entire image is in view. Avoid excessive backlighting and glare.</string>
+    <string name="id_capture_instruction_continue">Continue</string>
+    <string name="id_capture_success_message">Success</string>
+    <string name="image_not_captured_msg">Image not captured</string>
+    <string name="image_preview_msg">Verify to ensure complete ID is visible with edges and there is no glare or blurred text.</string>
+    <string name="incorrect_hand">Incorrect hand</string>
+    <string name="initialization_required_msg">SDK not initialized</string>
+    <string name="invalid_request_param">Invalid request parameter</string>
+    <string name="keep_face_steady">Keep your face steady</string>
+    <string name="license_manager">License Manager</string>
+    <string name="light">Light</string>
+    <string name="light_level">Light level</string>
+    <string name="live_face_not_detected_msg">Live face is not detected.please try again</string>
+    <string name="look_straight">Please look straight into the phone</string>
+    <string name="mapping_add_field_msg">Need Mapping for Add Field</string>
+    <string name="maximum_fingerprint_device_timeout">Maximum  timeout value 90 second</string>
+    <string name="menuItemStartService">startAppitService</string>
+    <string name="minimum_image_size">Minimum Image Size(KB)</string>
+    <string name="minimun_fingerprint_device_timeout">Minimum  timeout value 20 second</string>
+    <string name="move_away">Move away</string>
+    <string name="move_camera_closer_to_your_face">Move camera closer to face and look towards light.</string>
+    <string name="move_closer">Move closer</string>
+    <string name="move_down">Slowly move your head down</string>
+    <string name="move_face_away">Move back</string>
+    <string name="move_face_closer">Move closer</string>
+    <string name="move_head_down">Move head down</string>
+    <string name="move_head_up">Move head up</string>
+    <string name="move_id_away">Move ID away</string>
+    <string name="move_id_closer">Move ID closer</string>
+    <string name="move_up">Slowly move your head up</string>
+    <string name="mrz_error_message">MRZ is not detected please try again</string>
+    <string name="msg_0_faces">0 faces</string>
+    <string name="msg_0_fingers">0 fingers</string>
+    <string name="msg_0_irises">0 irises</string>
+    <string name="msg_0_voices">0 voices</string>
+    <string name="msg_additional_licenses_not_obtained">Additional licenses were NOT obtained</string>
+    <string name="msg_additional_licenses_obtained">Additional licenses were obtained</string>
+    <string name="msg_already_extracting">Already extracting.</string>
+    <string name="msg_are_all_records_the_same_finger">Are you sure all records/images are of the same finger?</string>
+    <string name="msg_are_all_records_the_same_palm">Are you sure all records/images are of the same palm?</string>
+    <string name="msg_blink_and_confidence">Blink: %1$s, Confidence: %2$d</string>
+    <string name="msg_blink_not_detected">Blink not detected</string>
+    <string name="msg_candidate_images_not_opened">Candidate images have not been opened yet.</string>
+    <string name="msg_candidate_templates_not_opened">Candidate templates have not been opened yet.</string>
+    <string name="msg_capturing_from_microphone">Recording. Please speak to microphone.</string>
+    <string name="msg_dark_glasses_and_confidence">Dark glasses: %1$s, Confidence: %2$d</string>
+    <string name="msg_dark_glasses_not_detected">Dark glasses not detected</string>
+    <string name="msg_detecting">Detecting…</string>
+    <string name="msg_enroll">Enroll</string>
+    <string name="msg_enrolling">Enrolling…</string>
+    <string name="msg_enrollment">Enrollment</string>
+    <string name="msg_enrollment_failed">Enrollment failed: %1$s</string>
+    <string name="msg_enrollment_succeeded">Enrollment succeeded</string>
+    <string name="msg_enter_rtsp_camera_url">Enter rtsp camera url</string>
+    <string name="msg_error_parameter_not_image_either">Error. Passed parameter is not an image either.</string>
+    <string name="msg_expression_and_confidence">Expression: %1$s, Confidence: %2$d</string>
+    <string name="msg_expression_not_detected">Expression not detected</string>
+    <string name="msg_extract">Extract</string>
+    <string name="msg_extracting">Extracting…</string>
+    <string name="msg_extracting_multi_face_image">Extracting multiple face image…</string>
+    <string name="msg_extracting_single_face_image">Extracting single faces image…</string>
+    <string name="msg_eyes_away"> Eyes turned away</string>
+    <string name="msg_eyes_found">Eyes found:</string>
+    <string name="msg_eyes_not_found">\tEyes not found.</string>
+    <string name="msg_face_found">Face found:</string>
+    <string name="msg_face_match_details">\tFace match details: </string>
+    <string name="msg_faces_not_found">Faces not found. Status = %1$s</string>
+    <string name="msg_facial_features_not_detected">Facial features not detected</string>
+    <string name="msg_finger_scanning_failed">Finger scanning failed.</string>
+    <string name="msg_fingerprint_match_details">\tFingerprint match details: </string>
+    <string name="msg_found">Found</string>
+    <string name="msg_frowning">Frowning</string>
+    <string name="msg_gender_not_detected">Gender not detected</string>
+    <string name="msg_generalization_succeeded">Generalization succeeded.</string>
+    <string name="msg_generalizing">Generalizing…</string>
+    <string name="msg_glasses_and_confidence">Glasses: %1$s, Confidence: %2$d</string>
+    <string name="msg_glasses_not_detected">Glasses not detected</string>
+    <string name="msg_identification">Identification</string>
+    <string name="msg_identification_error">Error occurred during identification</string>
+    <string name="msg_identification_fail">Identification failed</string>
+    <string name="msg_identification_finished">=== Matching finished ===</string>
+    <string name="msg_identification_results">ID: %1$s</string>
+    <string name="msg_identification_results_with_score">Name: %1$s. Score: %2$d</string>
+    <string name="msg_identification_started">=== Matching started ===</string>
+    <string name="msg_identify">Identify</string>
+    <string name="msg_identifying">Identifying…</string>
+    <string name="msg_iris_extraction_failed">Iris template extraction failed.</string>
+    <string name="msg_iris_match_details">\tIris match details: </string>
+    <string name="msg_licenses_not_obtained">Licenses were NOT obtained</string>
+    <string name="msg_licenses_obtained">Licenses were obtained</string>
+    <string name="msg_matching">Matching…</string>
+    <string name="msg_missing_positions_in_image">Missing positions in the image</string>
+    <string name="msg_mouth_found">Mouth found:</string>
+    <string name="msg_mouth_not_found">\tMouth not found.</string>
+    <string name="msg_mouth_open_and_confidence">Mouth open: %1$s, Confidence: %2$d</string>
+    <string name="msg_mouth_open_not_detected">Mouth open not detected</string>
+    <string name="msg_neutral">Neutral expression</string>
+    <string name="msg_nfposition_in_image_to_be_segmented">NFPosition in the image to be segmented</string>
+    <string name="msg_no_matches">No matches found</string>
+    <string name="msg_no_microphone_found">No microphone found</string>
+    <string name="msg_no_scanners_found">No scanners found.</string>
+    <string name="msg_nose_found">Nose found:</string>
+    <string name="msg_nose_not_found">\tNose not found.</string>
+    <string name="msg_not_enough_for_generalization">At least 3 records/images are required for generalization.</string>
+    <string name="msg_not_found">Not found</string>
+    <string name="msg_not_saving_no_records_found">Not saving the template file because no records were found.</string>
+    <string name="msg_obtaining_additional_licenses">Obtaining additional licenses…</string>
+    <string name="msg_obtaining_licenses">Obtaining licenses…</string>
+    <string name="msg_open_video">Open video</string>
+    <string name="msg_palm_match_details">\tPalm match details: </string>
+    <string name="msg_parameter_not_nfrecord_assuming_image">Passed parameter is not a NFRecord. Assumimg it is an image.</string>
+    <string name="msg_person_verified">Person verified</string>
+    <string name="msg_raised_brows">Raised eyebrows</string>
+    <string name="msg_reading_from_audio_file">Reading from audio file…</string>
+    <string name="msg_select_audio_file">Select audio file</string>
+    <string name="msg_select_candidate_image">Select candidate image</string>
+    <string name="msg_select_candidate_images">Select candidate images</string>
+    <string name="msg_select_candidate_template">Select candidate template</string>
+    <string name="msg_select_candidate_templates">Select candidate templates</string>
+    <string name="msg_select_image">Select image</string>
+    <string name="msg_select_left_iris_record">Select left iris record</string>
+    <string name="msg_select_missing_positions">Select missing positions</string>
+    <string name="msg_select_multi_face_image">Select multiple faces image</string>
+    <string name="msg_select_nfposition_first">Please select NFPosition first.</string>
+    <string name="msg_select_nfrecord">Select NFRecord</string>
+    <string name="msg_select_nltemplate_or_nlrecord">Select NLTemplate or NLRecord</string>
+    <string name="msg_select_position">Select position</string>
+    <string name="msg_select_probe_image">Select probe image</string>
+    <string name="msg_select_probe_template">Select probe template</string>
+    <string name="msg_select_record">Select record</string>
+    <string name="msg_select_reference_image">Select reference image</string>
+    <string name="msg_select_reference_template">Select reference template</string>
+    <string name="msg_select_right_iris_record">Select right iris record</string>
+    <string name="msg_select_single_face_image">Select single face image</string>
+    <string name="msg_select_source">Select source</string>
+    <string name="msg_select_template">Select template</string>
+    <string name="msg_smile">A smile</string>
+    <string name="msg_smile_opened_jaw">An opened-jaw smile</string>
+    <string name="msg_squinting">Squinting</string>
+    <string name="msg_start_capturing">Start capturing</string>
+    <string name="msg_stop_capturing">Stop capturing</string>
+    <string name="msg_template_contains">Template contains:</string>
+    <string name="msg_template_created">Template created.</string>
+    <string name="msg_templates_matched">Templates matched.</string>
+    <string name="msg_templates_not_matched">Templates not matched.</string>
+    <string name="msg_turn_camera_to_face">Please turn camera to face.</string>
+    <string name="msg_unknown">Unknown expression</string>
+    <string name="msg_unspecified">Unspecified expression</string>
+    <string name="msg_verification">Verification</string>
+    <string name="msg_verification_failed">Verification failed: %1$s</string>
+    <string name="msg_verification_succeeded">Verification succeeded</string>
+    <string name="msg_verify">Verify</string>
+    <string name="msg_verifying">Verifying…</string>
+    <string name="msg_voice_detected">Voice detected: Yes.</string>
+    <string name="msg_voice_match_details">\tVoice match details: </string>
+    <string name="msg_voice_not_detected">Voice detected: No.</string>
+    <string name="network_timeout_msg">Poor internet connectivity</string>
+    <string name="new_password">New Password</string>
+    <string name="nfiq">NFIQ:</string>
+    <string name="no_fingerprint_device">No fingerprint device detected</string>
+    <string name="no_internet_connectivity_msg">No internet connection</string>
+    <string name="none">Uncheck All</string>
+    <string name="nosdcard">There is no SD card</string>
+    <string name="notification_enabled_summary">Place the battery level on the status bar</string>
+    <string name="notification_enabled_title">Notification</string>
+    <string name="ok">OK</string>
+    <string name="old_password">Old Password</string>
+    <string name="operation_cancel_msg">Operation cancel.</string>
+    <string name="operation_timeout">Operation timeout</string>
+    <string name="out_of_focus_fc_detect">Tap screen to focus or move camera closer/away</string>
+    <string name="out_of_focus_img_capture">Tap screen to focus \n or move camera closer/away</string>
+    <string name="passive_face_detection_instruction">Before taking a selfie, remove your glasses and/or hat and avoid excessive backlighting.\nTo capture your selfie automatically, frame your face inside the oval and position your device at eye level while looking directly into the camera.</string>
+    <string name="password">Password</string>
+    <string name="password_changed">Password Changed</string>
+    <string name="permission_not_granted">Permission is not granted</string>
+    <string name="play_service_exception">Play service exception.</string>
+    <string name="please_connect_fingerprint_device">Please connect fingerprint device first.</string>
+    <string name="please_select_fingerprint_device">Please select Fingerprint device</string>
+    <string name="please_try_again">Please try again</string>
+    <string name="please_wait">Please wait</string>
+    <string name="poor">Poor</string>
+    <string name="powered_by_idmission">powered by IDmission LLC</string>
+    <string name="pref_default_language">en-US</string>
+    <string name="pref_key_language">pref_key_language</string>
+    <string name="pref_key_notification">pref_key_notification</string>
+    <string name="preferences">Preferences</string>
+    <string name="preferences_enrollment_check_for_duplicates">Check for duplicates</string>
+    <string name="preferences_extraction">Extraction</string>
+    <string name="preferences_face_advanced_category_name">Advanced</string>
+    <string name="preferences_face_confidence_threshold">Face confidence threshold</string>
+    <string name="preferences_face_create_thumbnail">Create thumbnail</string>
+    <string name="preferences_face_detect_all_feature_points">Detect all feature points</string>
+    <string name="preferences_face_detect_base_feature_points">Detect base feature points</string>
+    <string name="preferences_face_detect_properties">Detect properties</string>
+    <string name="preferences_face_determine_gender">Determine gender</string>
+    <string name="preferences_face_extraction_angle_deviation_category_name">Angle deviations</string>
+    <string name="preferences_face_extraction_iod_category_name">Inter ocular distances</string>
+    <string name="preferences_face_matching_speed">Speed</string>
+    <string name="preferences_face_matching_threshold">Matching threshold</string>
+    <string name="preferences_face_max_iod">MaxIod</string>
+    <string name="preferences_face_maximal_roll">Maximal roll angle deviation</string>
+    <string name="preferences_face_maximal_yaw">Maximal yaw angle deviation</string>
+    <string name="preferences_face_min_iod">MinIod</string>
+    <string name="preferences_face_quality_threshold">Face quality threshold</string>
+    <string name="preferences_face_recognize_emotion">Recognize emotion</string>
+    <string name="preferences_face_recognize_expression">Recognize expression</string>
+    <string name="preferences_face_template_size">Template size</string>
+    <string name="preferences_face_thumbnail_category_name">Thumbnail</string>
+    <string name="preferences_face_thumbnail_width">Thumbnail width</string>
+    <string name="preferences_finger_fast_extraction">Fast extraction</string>
+    <string name="preferences_finger_return_processed_image">Return processed image</string>
+    <string name="preferences_matching">Matching</string>
+    <string name="preferences_matching_speed">Matching speed</string>
+    <string name="preferences_quality_threshold">Quality threshold</string>
+    <string name="preferences_reset_to_defaults">Set default values</string>
+    <string name="preferences_reset_to_defaults_summary">Sets all preferences to factory defaults</string>
+    <string name="preferences_template_size">Template size</string>
+    <string name="preview_image">Preview</string>
+    <string name="procesing_document">Processing Document - Please Wait ...</string>
+    <string name="questionmark">\?!</string>
+    <string name="read_timeout_msg">Timeout for Response.</string>
+    <string name="real_id_not_detected">Real ID not detected, please try again.</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="recording">Recording</string>
+    <string name="refresh">Refresh</string>
+    <string name="request_already_running">Original call is in process.</string>
+    <string name="request_param_not_available">Request parameter not available</string>
+    <string name="request_response_not_found">Request and Response not found</string>
+    <string name="require_external_storage_permission">Require external storage permission.</string>
+    <string name="reset_device_minutes">Reset Device(minutes)</string>
+    <string name="resume">Clear Data</string>
+    <string name="resume_message">All local and form data will be deleted permanently.</string>
+    <string name="retry">Retry</string>
+    <string name="rights_reserved_string">© 2011 IDMission. All Rights Reserved.</string>
+    <string name="search_for_devices">Search For Devices</string>
+    <string name="searching_for_id">Searching for ID ...</string>
+    <string name="select_fingerprint_device">Select Fingerprint Device</string>
+    <string name="settings">Settings</string>
+    <string name="signature_error_msg">Please keep the signature within the frame and do not overlap it with the frame</string>
+    <string name="signature_msg">Please sign</string>
+    <string name="signature_title_label_message">Sign</string>
+    <string name="smile">Smile</string>
+    <string name="smile_please">Hold camera steady and smile please.</string>
+    <string name="socket_exception_msg">Socket timeout exception.</string>
+    <string name="some_error_occurred_msg">An error has occurred, please try again</string>
+    <string name="stop_searching">Stop Searching</string>
+    <string name="subject_is_too_dark_fc_detect">It\'s too dark to take a good image. Find a place with better lighting.</string>
+    <string name="subject_is_too_dark_img_capture">It\'s too dark to take a good image.\nFind a place with better lighting.</string>
+    <string name="success_msg">Success</string>
+    <string name="take_picture_error">Could not take picture</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="too_dark">It\'s too dark to take a good image. Find a place with better lighting</string>
+    <string name="too_much_glare_face_capture">Too much light, move face away from direct light</string>
+    <string name="too_much_glare_img_capture">Too much light,\n move document away from direct light</string>
+    <string name="turn_left">Turn your head slowly to the left</string>
+    <string name="turn_right">Turn your head slowly to the right</string>
+    <string name="unable_to_capture_image">Unable to capture image. Please try again.</string>
+    <string name="unable_to_record_audio">Unable to record audio.</string>
+    <string name="unhandled_exception_msg">Error in processing your request.</string>
+    <string name="unknown_host_exception_msg">Error in processing your request. Unknown Host Exception.</string>
+    <string name="vc_text_label_message">Please wait while we setup conference</string>
+    <string name="voice_delete">Delete</string>
+    <string name="voice_pause">Pause</string>
+    <string name="voice_play">Play</string>
+    <string name="voice_record_already_running_msg">Voice recording already running.</string>
+    <string name="voice_retry">Retry</string>
+    <string name="voice_save">Save</string>
+    <string name="voice_start">Start</string>
+    <string name="voice_stop">Stop</string>
+    <string name="voice_title_label_message"/>
+    <string name="web_ids_url">https://demo.idmission.com/inform/</string>
+    <string name="your_battery_status">Your battery Status</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="zxing_msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <style name="ProgressDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#000000</item>
+    </style>
+    <style name="Theme.AppCompat.Translucent">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:colorBackgroundCacheHint">@null</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation</item>
+	</style>
+    <style name="ThemeTextView">
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+    <style name="zxing_CaptureTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+  </style>
+    <declare-styleable name="CropImageView">
+
+        <attr name="guidelines">
+            <enum name="off" value="0"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="on" value="2"/>
+        </attr>
+
+        <attr format="boolean" name="fixAspectRatio"/>
+        <attr format="integer" name="aspectRatioX"/>
+        <attr format="integer" name="aspectRatioY"/>
+
+    </declare-styleable>
+    <declare-styleable name="GIFView">
+        <attr format="reference" name="src"/>
+    </declare-styleable>
+    <declare-styleable name="signature">
+        <attr format="boolean" name="enableSignature"/>
+        <attr format="dimension" name="penSize"/>
+        <attr format="color" name="penColor"/>
+        <attr format="color" name="backgroundColor"/>
+    </declare-styleable>
+    <declare-styleable name="zxing_camera_preview">
+    <attr format="dimension" name="zxing_framing_rect_width"/>
+    <attr format="dimension" name="zxing_framing_rect_height"/>
+    <attr format="boolean" name="zxing_use_texture_view"/>
+    <attr format="enum" name="zxing_preview_scaling_strategy">
+      <enum name="centerCrop" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitXY" value="3"/>
+    </attr>
+  </declare-styleable>
+    <declare-styleable name="zxing_finder">
+    <attr format="color" name="zxing_possible_result_points"/>
+    <attr format="color" name="zxing_result_view"/>
+    <attr format="color" name="zxing_viewfinder_laser"/>
+    <attr format="color" name="zxing_viewfinder_mask"/>
+  </declare-styleable>
+    <declare-styleable name="zxing_view">
+    <attr format="reference" name="zxing_scanner_layout"/>
+  </declare-styleable>
+</resources>

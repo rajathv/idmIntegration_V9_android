@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/snippet_delete_dialog"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="20dp"
+            android:text="Delete Snippet"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/dialog_title_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:layout_below="@+id/linear_layout_header"
+        android:background="#000000" />
+
+    <ListView
+        android:id="@+id/component_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_layout_footer"
+        android:layout_below="@+id/text" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:layout_above="@+id/linear_layout_footer"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="20dip"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dip">
+
+        <Button
+            android:id="@+id/positive_button"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#1e90ff"
+            android:text="close"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

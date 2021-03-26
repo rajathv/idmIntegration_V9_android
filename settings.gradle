@@ -1,0 +1,7 @@
+include ':konywidgets'
+include ':opencv'
+include ':idm-imgproc-lib'
+include ':OpenCV_4.1.1'
+include ':idm-imgproc-7.4.6.2'
+include ':app'
+rootProject.name = "IDMSample"
