@@ -52,4 +52,6 @@ dependencies {
     implementation 'com.amazonaws:aws-android-sdk-kinesis:2.19.2'
     implementation 'com.amazonaws:aws-android-sdk-core:2.19.2'
     implementation 'org.apache.commons:commons-lang3:3.11'
+
+    implementation 'org.acra'
 }
