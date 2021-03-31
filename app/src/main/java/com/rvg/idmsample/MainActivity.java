@@ -52,9 +52,7 @@ import com.idmission.client.RequestResponseFragment;
 import com.idmission.client.RequestResponseInterface;
 import com.idmission.client.Response;
 import com.idmission.client.ResponseStatusCode;
-import com.idmission.libtestproject.fragments.ResultData;
-import com.idmission.libtestproject.fragments.ResultImageFragment;
-import com.idmission.libtestproject.utils.StringUtil;
+
 import com.konylabs.vm.Function;
 
 import org.json.JSONException;
@@ -76,11 +74,14 @@ public class MainActivity extends FragmentActivity implements ImageProcessingRes
     private ImageProcessingSDK imageProcessingSDK = null;
     //put captured image in this object to display in viewpager
     public static LinkedHashMap<String, ResultData> capturedImageData = new LinkedHashMap<>();
-    public static Function mCallback = null;
+    public  Function mCallback = null;
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        this.mCallback = (Function) getIntent().getSerializableExtra("callBack");
+Log.d("mcallback", "Data inside mcallback "+mCallback);
 
 
         try {
@@ -166,6 +167,14 @@ public class MainActivity extends FragmentActivity implements ImageProcessingRes
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
+            final Object[] result = {  base64Image };
+
+            try {
+                MainActivity.this.mCallback.execute(result);
+            }
+            catch (Exception exp) {
+                exp.printStackTrace();
+            }
 /*
             switch(requestCode) {
                 case FRONT_IMG_REQ_CODE:
@@ -225,6 +234,14 @@ public class MainActivity extends FragmentActivity implements ImageProcessingRes
                 capturedImageData.put(ResultData.OVAL_FACE_IMAGE_DATA, new ResultData(ResultData.OVAL_FACE_IMAGE_DATA, ovalFaceImageBase64));
             }
             Log.d("capturedata", "This is the capturedata" +capturedImageData.get(ovalFaceImageBase64));
+//            final Object[] result = {  faceImageBase64 };
+//
+//            try {
+//                MainActivity.this.mCallback.execute(result);
+//            }
+//            catch (Exception exp) {
+//                exp.printStackTrace();
+//            }
            // resultImagePagerAdapter.notifyDataSetChanged();
         }
     }
